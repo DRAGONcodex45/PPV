@@ -1,0 +1,110 @@
+/* =========================================
+   FLOATING WHATSAPP + TELEGRAM
+========================================= */
+
+.social-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Individual button */
+
+.social-float-btn {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .18);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* WhatsApp */
+
+.social-float-btn.whatsapp {
+    background: #25D366;
+}
+
+
+/* Telegram */
+
+.social-float-btn.telegram {
+    background: #229ED9;
+}
+
+
+/* Hover */
+
+.social-float-btn:hover {
+    color: #fff;
+
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, .22);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .social-float {
+        right: 14px;
+        bottom: 14px;
+
+        gap: 8px;
+    }
+
+    .social-float-btn {
+        width: 46px;
+        height: 46px;
+
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .social-float {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .social-float-btn {
+        width: 43px;
+        height: 43px;
+
+        font-size: 20px;
+    }
+}
